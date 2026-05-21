@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>L'Ambre Bistro | Warm Cinematic Dining & Modern Culinary Craft</title>
+  <meta name="description" content="Experience premium dining at L'Ambre Bistro. Indulge in Wagyu steaks, hand-crafted pastas, and cozy chocolate soufflés beneath our warm cinematic lights. Book your table now.">
+  <meta name="keywords" content="premium restaurant, cozy dining, cinematic lighting, Wagyu steak, molten soufflé, live reservation, romantic bistro">
+  <meta name="author" content="L'Ambre Bistro">
+  
+  <!-- Favicon placeholder (CSS styled circular icon used in header) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect y=%2210%22 width=%22100%22 height=%2280%22 rx=%2215%22 fill=%22%23d4af37%22/><text y=%2270%22 x=%2220%22 font-family=%22serif%22 font-size=%2260%22 fill=%22%230a0604%22>L</text></svg>">
+
+  <!-- Google Fonts & Icon Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styling System -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Moving Ambient Background & Blur Orbs -->
+  <div class="ambient-glows" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- Floating Premium Navigation Header -->
+  <header class="header" id="mainHeader">
+    <a href="#" class="logo" id="logoLink" aria-label="L'Ambre Bistro Home">
+      <div class="logo-icon" aria-hidden="true"></div>
+      L'AMBRE<span>BISTRO</span>
+    </a>
+    
+    <nav class="nav" id="desktopNav" aria-label="Main Navigation">
+      <a href="#" class="nav-link active" id="navHome">Home</a>
+      <a href="#story" class="nav-link" id="navStory">Our Story</a>
+      <a href="#menu" class="nav-link" id="navMenu">Menu</a>
+      <a href="#spotlight" class="nav-link" id="navSpotlight">Spotlight</a>
+      <a href="#chef" class="nav-link" id="navChef">Chef</a>
+      <a href="#reservation" class="btn-primary" id="navReserve">Reserve a Table</a>
+    </nav>
+
+    <button class="mobile-menu-btn" id="mobileMenuTrigger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- =========================================
+         HERO SECTION: CINEMATIC WELCOME
+         ========================================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal-element revealed">
+          <span class="hero-subtitle">Est. 2018 | Fine Dining Reimagined</span>
+          <h1 class="hero-title">Where Warmth<br>Meets Culinary<br><span>Mastery.</span></h1>
+          <p class="hero-description">
+            Step into a cozy cocoon of amber cinematic lighting and sensory harmony. At L'Ambre Bistro, every dish is an act of storytelling, seared with fire, kissed by herbs, and served with pure soul.
+          </p>
+          <div class="hero-buttons">
+            <a href="#reservation" class="btn-primary" id="heroReserveBtn">Book A Seating</a>
+            <a href="#menu" class="btn-outline" id="heroExploreBtn">Explore Menu</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual-frame reveal-element revealed reveal-delay-2">
+          <div class="hero-lighting-halo"></div>
+          <div class="hero-circle-svg-border"></div>
+          <div class="hero-image-container">
+            <img src="assets/bistro_interior.png" alt="Warm candlelit dining tables at L'Ambre Bistro" class="hero-food-image" id="heroImg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         STORYTELLING SECTION: THE CRAFT
+         ========================================= -->
+    <section class="section" id="story">
+      <div class="container story-section">
+        <div class="story-visual-grid reveal-element">
+          <div class="story-img-card story-img-1">
+            <img src="assets/bistro_interior.png" alt="L'Ambre Bistro elegant leather seating interior">
+          </div>
+          <div class="story-img-card story-img-2">
+            <img src="assets/signature_steak.png" alt="Chef finishing a gourmet plate in a warm kitchen">
+          </div>
+        </div>
+        
+        <div class="story-content reveal-element reveal-delay-2">
+          <span class="italic-subtitle">Our Philosophy</span>
+          <h2 class="section-title">A Symphony of <span>Smoke, Wood, & Wine</span></h2>
+          <p style="margin-bottom: 20px;">
+            We believe that fine dining should feel like returning home. Our custom wood-fire hearth burns dry oak and pecan woods, infusing our culinary creations with a signature rustic aroma that pairs elegantly with our reserve vintages.
+          </p>
+          <p style="margin-bottom: 25px;">
+            From the dynamic copper bar-tops to the low-glow handblown lighting fixtures, L'Ambre Bistro is designed to slow time down, inviting you to relish conversation, laughter, and culinary magic.
+          </p>
+          <div class="story-quote-card">
+            <p class="story-quote">"Taste is not just an experience of the palate, it is a trigger for memory. We cook to make those memories unforgettable."</p>
+            <p class="story-author">Chef Lucas Vaudroy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         INTERACTIVE MENU SECTION
+         ========================================= -->
+    <section class="section" id="menu" style="background-color: var(--bg-dark);">
+      <div class="container">
+        <div class="text-center reveal-element" style="margin-bottom: 50px;">
+          <span class="italic-subtitle">Seasonal Selections</span>
+          <h2 class="section-title">The Culinary <span>Chronicles</span></h2>
+          <p style="max-width: 600px; margin: 0 auto; opacity: 0.8;">
+            Carefully curated dishes using seasonal ingredients sourced directly from organic, artisanal farmers. Explore our handcrafted menu categories.
+          </p>
+        </div>
+
+        <!-- Menu Tabs Navigation -->
+        <div class="menu-tabs reveal-element reveal-delay-1">
+          <button class="menu-tab-btn active" data-tab="starters">Starters</button>
+          <button class="menu-tab-btn" data-tab="mains">Mains</button>
+          <button class="menu-tab-btn" data-tab="desserts">Desserts</button>
+          <button class="menu-tab-btn" data-tab="cocktails">Cocktails</button>
+        </div>
+
+        <!-- Dynamic Menu Grid -->
+        <div class="menu-grid reveal-element reveal-delay-2" id="menuItemsGrid">
+          <!-- Starters will be loaded dynamically via JS, providing beautiful micro-animations -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         VISUAL FOOD SPOTLIGHT (WITH STEAM CANVAS)
+         ========================================= -->
+    <section class="spotlight-section" id="spotlight">
+      <div class="container spotlight-layout">
+        <div class="spotlight-interactive-showcase reveal-element">
+          <div class="spotlight-glow"></div>
+          
+          <!-- rising steam canvas -->
+          <div class="steam-canvas-container" id="steamContainer">
+            <canvas id="steamCanvas"></canvas>
+          </div>
+          
+          <div class="spotlight-food-frame" id="spotlightPlate">
+            <!-- Central plate showcase -->
+            <img src="assets/signature_steak.png" alt="Signature dish Wagyu ribeye steak" id="spotlightMainImg">
+          </div>
+          
+          <!-- Quick Selector Buttons -->
+          <div class="spotlight-showcase-selectors" id="spotlightSelectors">
+            <button class="showcase-selector-btn active" data-dish="steak" aria-label="Showcase Wagyu Ribeye">
+              <img src="assets/signature_steak.png" alt="Steak preview">
+            </button>
+            <button class="showcase-selector-btn" data-dish="pasta" aria-label="Showcase Truffle Tagliatelle">
+              <img src="assets/artisan_pasta.png" alt="Pasta preview">
+            </button>
+            <button class="showcase-selector-btn" data-dish="souffle" aria-label="Showcase Molten Souffle">
+              <img src="assets/chocolate_souffle.png" alt="Souffle preview">
+            </button>
+          </div>
+        </div>
+
+        <div class="spotlight-content reveal-element reveal-delay-2">
+          <span class="italic-subtitle">Under the Spotlight</span>
+          <h2 class="section-title" id="spotlightDishTitle">Signature <span>Wagyu Ribeye</span></h2>
+          <p style="margin-bottom: 25px; line-height: 1.8;" id="spotlightDishDesc">
+            Prime graded A5 Miyazaki Wagyu seared over pecan wood fire. Glistening with our signature bone-marrow butter, infused with wild rosemary, and dotted with smoked Maldon sea salt crystals. Served hot on a dark stone slab, unleashing a rich, woody steam.
+          </p>
+          
+          <div class="chef-timeline" style="margin-bottom: 30px;">
+            <div class="chef-timeline-step">
+              <div class="chef-step-num">01</div>
+              <div class="chef-step-text">
+                <h5 id="spotlightDetail1Title">The Roast & Fire</h5>
+                <p id="spotlightDetail1Desc">Seared at 800 degrees to lock in internal caramelization and rich woodsmoke juices.</p>
+              </div>
+            </div>
+            <div class="chef-timeline-step">
+              <div class="chef-step-num">02</div>
+              <div class="chef-step-text">
+                <h5 id="spotlightDetail2Title">Infusion Craft</h5>
+                <p id="spotlightDetail2Desc">Basted directly with hand-whipped rosemary butter, bringing out complex herbal aromatics.</p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="#reservation" class="btn-primary" id="spotlightCTA">Experience This Live</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         INTERACTIVE CHEF SECTION
+         ========================================= -->
+    <section class="section" id="chef" style="background-color: var(--bg-dark);">
+      <div class="container chef-grid">
+        <div class="chef-image-wrapper reveal-element">
+          <div class="chef-image-box">
+            <img src="assets/signature_steak.png" alt="Chef Lucas Vaudroy plate composition closeup" id="chefImg">
+          </div>
+          <div class="chef-experience-badge glass-panel">
+            <h4>25+</h4>
+            <p>Years of Culinary<br>Excellence</p>
+          </div>
+        </div>
+
+        <div class="chef-content reveal-element reveal-delay-2">
+          <span class="italic-subtitle">Meet the Maestro</span>
+          <h2 class="section-title">Artistry on a <span>Plate</span></h2>
+          
+          <div class="chef-tabs">
+            <button class="chef-tab-btn active" data-chef="philosophy">Philosophy</button>
+            <button class="chef-tab-btn" data-chef="journey">The Journey</button>
+            <button class="chef-tab-btn" data-chef="awards">Accolades</button>
+          </div>
+
+          <!-- Philosophy Tab Content -->
+          <div class="chef-tab-content active" id="chef-philosophy">
+            <p class="chef-quote">"Ingredients are notes; the kitchen is an instrument. I do not create recipes, I capture feelings."</p>
+            <p class="chef-bio">
+              Chef Lucas Vaudroy trained in classic French culinary styles under Michelin guides in Lyon before embarking on a global sensory journey. His philosophy combines absolute respect for fresh, locally-cultivated organic greens with ancient high-heat wood firing, developing raw and rich flavor profiles that feel comforting and premium.
+            </p>
+          </div>
+
+          <!-- Journey Tab Content -->
+          <div class="chef-tab-content" id="chef-journey">
+            <div class="chef-timeline">
+              <div class="chef-timeline-step">
+                <div class="chef-step-num">1998</div>
+                <div class="chef-step-text">
+                  <h5>Sarthe Culinary Foundations</h5>
+                  <p>Began apprenticeships in regional bistros, perfecting wood-fire smoke dynamics.</p>
+                </div>
+              </div>
+              <div class="chef-timeline-step">
+                <div class="chef-step-num">2007</div>
+                <div class="chef-step-text">
+                  <h5>Lyon Michelin Mastership</h5>
+                  <p>Served as Sous Chef in a 3-star kitchen, focusing on classic sauce structure and food aesthetics.</p>
+                </div>
+              </div>
+              <div class="chef-timeline-step">
+                <div class="chef-step-num">2018</div>
+                <div class="chef-step-text">
+                  <h5>Founding L'Ambre Bistro</h5>
+                  <p>Created a glowing amber culinary sanctuary to unite wood smoke, comfort, and premium design.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accolades Tab Content -->
+          <div class="chef-tab-content" id="chef-awards">
+            <div class="chef-timeline">
+              <div class="chef-timeline-step">
+                <div class="chef-step-num">01</div>
+                <div class="chef-step-text">
+                  <h5>Two Michelin Stars</h5>
+                  <p>Awarded for outstanding culinary consistency and dynamic wine pairings.</p>
+                </div>
+              </div>
+              <div class="chef-timeline-step">
+                <div class="chef-step-num">02</div>
+                <div class="chef-step-text">
+                  <h5>Epicurean Vanguard Award</h5>
+                  <p>Honored for pioneering premium cozy dining frameworks and fireplace-infusion research.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         LIVE RESERVATION SECTION
+         ========================================= -->
+    <section class="section reservation-section" id="reservation">
+      <div class="container reservation-grid">
+        <div class="reservation-info reveal-element">
+          <span class="italic-subtitle">Join Our Hearth</span>
+          <h2 class="section-title">Reserve <span>Your Table</span></h2>
+          <p style="opacity: 0.95;">
+            To maintain our warm, ambient dining atmosphere and premium custom service, we host a limited number of seating arrangements per evening. Book early to secure your selected dining zone.
+          </p>
+          
+          <div class="info-cards">
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+              <div class="info-text">
+                <h4>Address</h4>
+                <p>448 Amber Boulevard, Culinary Arts Quarter, NY</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="info-text">
+                <h4>Opening Hours</h4>
+                <p>Tuesday - Sunday: 5:00 PM - 11:30 PM (Kitchen closes at 10:30 PM)</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-circle-info"></i></div>
+              <div class="info-text">
+                <h4>Reservation Support</h4>
+                <p>Call (+1) 234-567-8900 | concierge@lambrebistro.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reservation-form-container glass-panel reveal-element reveal-delay-2">
+          <!-- Reservation form -->
+          <form id="bookingForm">
+            <!-- Custom Seating Zone Map -->
+            <div class="seating-zone-selector">
+              <span class="seating-label">Select Seating Zone</span>
+              <div class="seating-grid">
+                <div class="seating-card active" data-zone="Glasshouse">
+                  <h5>The Glasshouse</h5>
+                  <p>Starry garden view</p>
+                </div>
+                <div class="seating-card" data-zone="Main Hearth">
+                  <h5>Main Hearth</h5>
+                  <p>Cozy fire crackle</p>
+                </div>
+                <div class="seating-card" data-zone="Wine Vault">
+                  <h5>Wine Vault</h5>
+                  <p>Intimate cellar vibe</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookingName">Full Name</label>
+                <input type="text" id="bookingName" class="form-input" placeholder="Lucas Vaudroy" required>
+              </div>
+              <div class="form-group">
+                <label for="bookingEmail">Email Address</label>
+                <input type="email" id="bookingEmail" class="form-input" placeholder="lucas@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookingDate">Date</label>
+                <input type="date" id="bookingDate" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="bookingTime">Time Slot</label>
+                <select id="bookingTime" class="form-input" required>
+                  <option value="" disabled selected>Choose a time</option>
+                  <option value="5:30 PM">5:30 PM</option>
+                  <option value="6:00 PM">6:00 PM</option>
+                  <option value="7:15 PM">7:15 PM</option>
+                  <option value="8:00 PM">8:00 PM</option>
+                  <option value="8:45 PM">8:45 PM</option>
+                  <option value="9:30 PM">9:30 PM</option>
+                  <option value="10:15 PM">10:15 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookingGuests">Number of Guests</label>
+                <select id="bookingGuests" class="form-input" required>
+                  <option value="1 Guest">1 Guest</option>
+                  <option value="2 Guests" selected>2 Guests</option>
+                  <option value="3 Guests">3 Guests</option>
+                  <option value="4 Guests">4 Guests</option>
+                  <option value="5 Guests">5 Guests</option>
+                  <option value="6 Guests">6 Guests</option>
+                  <option value="7+ Guests">7+ Guests (Special Event)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="bookingRequest">Special Request (Optional)</label>
+                <input type="text" id="bookingRequest" class="form-input" placeholder="e.g. Birthday, Allergies">
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%;" id="bookingSubmitBtn">Secure Seating reservation</button>
+          </form>
+
+          <!-- Dynamic Booking Simulation Result -->
+          <div class="booking-sim-result" id="bookingResult">
+            <div class="success-icon"><i class="fa-solid fa-square-check"></i></div>
+            <h3>Reservation Secured!</h3>
+            <p>We are delighted to welcome you to the warm glow of our tables. A confirmation ticket has been dispatched to your inbox.</p>
+            
+            <div class="booking-details-box">
+              <div class="booking-details-row">
+                <span class="booking-details-label">Confirmation ID:</span>
+                <span class="booking-details-value" id="ticketId">#LMB-2026-9481</span>
+              </div>
+              <div class="booking-details-row">
+                <span class="booking-details-label">Guest:</span>
+                <span class="booking-details-value" id="ticketName">Lucas Vaudroy</span>
+              </div>
+              <div class="booking-details-row">
+                <span class="booking-details-label">Zone Chosen:</span>
+                <span class="booking-details-value" id="ticketZone">The Glasshouse</span>
+              </div>
+              <div class="booking-details-row">
+                <span class="booking-details-label">Seating Date & Time:</span>
+                <span class="booking-details-value" id="ticketDateTime">May 25, 2026 | 7:15 PM</span>
+              </div>
+              <div class="booking-details-row">
+                <span class="booking-details-label">Party Size:</span>
+                <span class="booking-details-value" id="ticketGuests">2 Guests</span>
+              </div>
+            </div>
+
+            <button type="button" class="btn-outline" id="bookingResetBtn">Reserve Another Seating</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================
+       FOOTER SECTION
+       ========================================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-column footer-about">
+        <a href="#" class="logo" style="margin-bottom: 20px;">
+          <div class="logo-icon"></div>
+          L'AMBRE<span>BISTRO</span>
+        </a>
+        <p>A culinary sanctuary woven with amber cinematic lights, hearth woodsmoke, and sensory harmony.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="L'Ambre Bistro Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="L'Ambre Bistro Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="L'Ambre Bistro Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" class="social-link" aria-label="L'Ambre Bistro Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Opening Hours</h4>
+        <ul class="footer-hours-list">
+          <li><span>Monday</span> <span>Closed</span></li>
+          <li><span>Tuesday</span> <span>5:00 PM - 11:30 PM</span></li>
+          <li><span>Wednesday</span> <span>5:00 PM - 11:30 PM</span></li>
+          <li><span>Thursday</span> <span>5:00 PM - 11:30 PM</span></li>
+          <li><span>Friday</span> <span>5:00 PM - 12:00 AM</span></li>
+          <li><span>Saturday</span> <span>5:00 PM - 12:00 AM</span></li>
+          <li><span>Sunday</span> <span>5:00 PM - 11:30 PM</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>448 Amber Boulevard, Culinary Arts Quarter, NY 10013</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>(+1) 234-567-8900</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>concierge@lambrebistro.com</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-newsletter">
+        <h4>The Journal</h4>
+        <p>Receive exclusive updates, culinary release schedules, and reserve tasting reservations.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" class="newsletter-input" placeholder="Your Email Address" required aria-label="Email address for newsletter">
+          <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 L'Ambre Bistro. All rights reserved. Crafted for visual excellence & premium dining sensory triggers.</p>
+      <p style="opacity: 0.6;">Designed by Antigravity AI</p>
+    </div>
+  </footer>
+
+  <!-- Custom Creative Interactions Script -->
+  <script src="app.js"></script>
+</body>
+</html>
